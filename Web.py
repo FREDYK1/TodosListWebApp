@@ -5,8 +5,8 @@ todos = mainFunctions.todo_list()
 
 
 def add_todo():
-    todo = sl.session_state["new_todo"] + "\n"
-    todos.append(todo)
+    todo_now = sl.session_state["new_todo"] + "\n"
+    todos.append(todo_now)
     mainFunctions.write_todos(todos)
 
 
